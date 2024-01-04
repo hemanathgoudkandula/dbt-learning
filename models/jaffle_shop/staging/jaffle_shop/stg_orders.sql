@@ -6,4 +6,4 @@ select
 
 from {{source('jaffle_shop','orders')}}
 
-{{limit_data_in_dev('order_date',4000)}}
+{{limit_data_in_dev(column_name = 'order_date', dev_data_in_dev = 4000)}}
